@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <HTML>
 <body>
-<h1>Melissa Lanning/h1>
-<h3>4628 SE 30TH AVE PORTLAND OR 97202
-(503) 804-6450 | "mailto:melissalanning@gmail.com"</h3>
-<h1>QUALIFICATIONS SUMMARY<h1>
-<p>20+ years of experience in enterprise client/server and networked systems documentation, support, and management.
+# Melissa Lanning
+## 4628 SE 30TH AVE PORTLAND OR 97202
+##(503) 804-6450 | "mailto:melissalanning@gmail.com"</h3>
+
+#QUALIFICATIONS SUMMARY<h1>
+20+ years of experience in enterprise client/server and networked systems documentation, support, and management.
 8+ years of experience creating technical documentation.
 Technical domains include software development, networking, security, and analytics.</p>
-<b>Specializing in</b>
-<ul>Product documentation & support, enterprise networking, security, and analytics hardware and software products.
-<ul>Audience and context-appropriate documentation.
-<ul>Agile development practices, team leadership and cross-functional collaboration.
-<ul>Requirements creation, quality assurance, and document development for complex enterprise-scale projects. 
-
+*Specializing in*
+- Product documentation & support, enterprise networking, security, and analytics hardware and software products.
+- Audience and context-appropriate documentation.
+- Agile development practices, team leadership and cross-functional collaboration.
+- Requirements creation, quality assurance, and document development for complex enterprise-scale projects.
 
 </body>
 </html>
