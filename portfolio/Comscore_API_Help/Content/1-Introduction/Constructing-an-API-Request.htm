@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Top_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Introduction">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/Simple.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>Constructing an API Request</title>
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <h1>Constructing an API Request</h1>
+                                    <p>Refer to the table below for a summary of required API request elements:</p>
+                                    <table style="width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="background-color: #f5f5f5;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="background-color: #f5f5f5;" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Term</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Definition</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Protocol</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Data access is provided via <a href="../2-API-Basics/HTTP-Protocol.htm">HTTP</a> over SSL/TLS (HTTPS).</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Hostname</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">API services are available on our <a href="http://www.api.rentrak.com/">www.api.rentrak.com</a> domain.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Data Type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="../2-API-Basics/JSON-Protocol.htm">JSON</a> is the only supported data type.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">API&#160;Method</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">API calls are made via the POST method.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Authentication</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The supported <a href="../2-API-Basics/Authentication.htm">authentication</a> scheme is covered on our Authentication page.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Request Parameters</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;"> 	
+
+Key/Value pairs of request data.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>The following example shows an HTTP request with all headers including Authorization. It uses the following credentials:</p>
+                                    <table style="margin-left: 0;margin-right: auto;width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="background-color: #f5f5f5;font-size: 10pt;">
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">ID: aaaabbbbcccddddeeeeffff
+</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Secret: 000011112222333344445555</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>The signature is calculated on the exact value of the HTTP body including spaces and newlines. The HTTP body does not end in a newline character. The String-to-Sign for this request is the following:</p>
+                                    <table style="margin-left: 0;margin-right: auto;width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="background-color: #f5f5f5;font-size: 10pt;">
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">/tv/v4/national_airing_views</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Fri, 25 Jan 2019 20:35:00 GMT</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">{</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"group_by": ["day"</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">],</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"fields": ["day", "num_hours" ],</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"filters": [</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">[ "range",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"day",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"2018-10-01",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"2018-10-31"</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">}</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>The HTTP request (including the JSON request object) is the following:</p>
+                                    <table style="margin-left: 0;margin-right: auto;width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">POST /tv/v4/national_airing_views HTTP/1.1</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Date: Fri, 25 Jan 2019 20:35:00 GMT</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Host: api.rentrak.com</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Authorization: RTK Aaaabbbbcccddddeeeeffff:XtHfcMRLOBAfSTyZoExpmUwfSsw=</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Content-Type: application/json; charset=utf-8</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">Content-Length: 164</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">{</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"group_by": ["day"],</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"fields": ["day", "num_hours" ],</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"filters": [</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">[ "range",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"day",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"2018-10-01",</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">"2018-10-31"</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                    <p style="font-family: 'Courier New';font-size: 10pt;">}</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2>Global Settings</h2>
+                                    <p>API settings that apply to all endpoints are described in this section.</p>
+                                    <h3>Concurrent Request Limits</h3>
+                                    <p>There are two types of limits, per client and per server. Each is described 
+ below:</p>
+                                    <table style="width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Limit</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Description</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Per Client</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">75</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="../2-API-Basics/HTTP-Protocol.htm">HTTP</a> 
+		 status 429 is returned when this limit is exceeded.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Per Server</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">70</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">HTTP 
+		 status 503 is returned if the server has the maximum number of 
+		 requests running on it.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-top: 10px;"><span style="font-weight: bold;">Note: </span>Comscore recommends handling these response codes when they are received 
+ and trying your request again.</p>
+                                    <h3>Request Size</h3>
+                                    <p>The request size limit is described 
+ below:</p>
+                                    <table style="width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 104px;">
+                                        </col>
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 63px;">
+                                        </col>
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1">
+                                        </col>
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Size</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Description</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Maximum</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">30 MB</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The maximum request size is 30 megabytes.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h2>Third Party Requests</h2>
+                                    <p>The API allows you to make requests as a third party provider on behalf of other <a href="https://www.comscore.com/" target="_blank" title="Company Web Site" alt="Company Web Site">Comscore</a> clients by using the as_client_id parameter. Set the as_client_id for the client you are using for the request and all of the subscription permissions will be applied for that client.</p>
+                                    <table style="left: 0px;top: 393px;width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');margin-left: 0;margin-right: auto;" cellspacing="0" bgcolor="#F0F0F0" class="TableStyle-SimpleWithPadding">
+                                        <col style="width: 100%;font-size: 10pt;" class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                            <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="background-color: #f5f5f5;font-size: 10pt;font-family: 'Courier New';">
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">{</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;"><span style="background-color: #ffff00;">"as_client_id": "INSERT CLIENT ID",</span>
+                                                </p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"fields": [</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"qtr_hour",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"market_no",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"market_name",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"station_call_sign",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"rating"</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">],</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"filters": [</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">[</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"eq",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"day",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"2018-09-12"</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">],</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">[</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"in",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"market_no",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">820</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">],</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">[</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"in",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"station_no",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">4653</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">],</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"group_by": [</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"market_no",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"qtr_hour",</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">"station_call_sign"</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">]</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">}</p>
+                                                <p style="font-family: 'Courier New';font-size: 10pt;">}</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

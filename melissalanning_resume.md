@@ -16,9 +16,9 @@ Technical domains include software development, networking, security, and analyt
 *Technical Writer*
 **Kollective Technology, Inc**
 June 2015 – Present
-As the company’s sole technical writer, I author, edit, and maintain the documentation for the entire Kollective product suite, including installation, administration, user guides, API developer guides, and release notes, using Atlassian Confluence and Jira, Adobe FrameMaker, Webworks ePublisher, Microsoft Visio and Word. The Kollective product suite encompasses software content delivery, video streaming, and analytics products in a SaaS framework.
-Collaborate with Engineering, Operations, Quality, Support, and Marketing departments in an Agile development environment to accurately characterize product functionality, known issues, and usability tips in internal and external documentation.
-Organize and manage all technical content on internal Confluence wiki. Publish documentation to customer community, hosted on Zendesk.
+As the company’s sole technical writer, I authored, edited, and maintained documentation for the entire Kollective product suite, including installation, administration, user guides, API developer guides, and release notes, using Atlassian Confluence and Jira, Adobe FrameMaker, Webworks ePublisher, Microsoft Visio and Word. The Kollective product suite encompasses software content delivery, video streaming, and analytics products in a SaaS framework.
+Collaborated with Engineering, Operations, Quality, Support, and Marketing departments in an Agile development environment to accurately characterize product functionality, known issues, and usability tips in internal and external documentation.
+Organized and managed all technical content on internal Confluence wiki. Published documentation to customer community, hosted on Zendesk.
 **Key Achievement**
 Reduced turnaround time for documentation updates and increased cross-functional content collaboration by migrating entire document authoring and publishing system from legacy authoring in FrameMaker and WebWorks ePublisher to authoring in Confluence wiki (XML) and PDF output.
 

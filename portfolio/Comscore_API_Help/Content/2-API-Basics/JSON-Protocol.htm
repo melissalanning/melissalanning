@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5___Top_Navigation" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="API Basics">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/Simple.css" rel="stylesheet" data-mc-stylesheet-type="table" /><title>JSON Protocol</title>
+        <script src="../../Resources/Scripts/custom.modernizr.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                                <div class="search-filter-wrapper">
+                                                    <div class="search-filter">
+                                                        <div class="search-filter-content">
+                                                            <ul>
+                                                                <li>All Files</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <div class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <h1>JSON Protocol</h1>
+                                    <p>JavaScript Object Notation (JSON) is a common language-independent data format that provides a simple text representation of arbitrary data structures.</p>
+                                    <p><b>Note:</b> See <a href="http://www.json.org/" target="_blank">json.org</a> for more information.</p>
+                                    <h1>Request Object</h1>
+                                    <p>The following keys can be included in request objects:</p>
+                                    <table style="mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;width: 950px;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 118px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 439px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">Name</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">Type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">R / O</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">Description</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">Endpoints</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;" rowspan="3">as_client_id</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;" rowspan="3">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;" rowspan="3">Optional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;" rowspan="3">Client identification code for making third party requests.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="../3-Endpoints/National-Airing-Views/National-Airing-Views-Endpoint.htm">National Airing Views</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="../3-Endpoints/Local-Airing-Views/Local-Airing-Views-Endpoint.htm">Local Airing Views</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="../3-Endpoints/Local-Time-Views/Local-Time-Views-Endpoint.htm">Local Time Views</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;"><a href="Fields.htm">fields</a>
+                                                </td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Array of String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Required</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The fields to include in the result dataset. Metrics used in this key must have a single value for all avails requested.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">
+                                                    <p style="font-size: 10pt;"> 	
+
+National Airing Views</p>
+                                                    <p style="font-size: 10pt;">
+Local Airing Views
+</p>
+                                                    <p style="font-size: 10pt;">
+Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"><a href="Filters.htm">filters</a>
+                                                </td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Array of String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Required</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">A conjunctive set of filters to apply to request.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">
+                                                    <p style="font-size: 10pt;">National Airing Views</p>
+                                                    <p style="font-size: 10pt;">
+Local Airing Views
+
+
+</p>
+                                                    <p style="font-size: 10pt;">
+Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">group_by</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Array of String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Required</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The keys for grouping results. The response dataset will contain one row for each combination of values of the keys in group_by.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">
+                                                    <p style="font-size: 10pt;">National Airing Views</p>
+                                                    <p style="font-size: 10pt;">
+Local Airing Views
+
+
+</p>
+                                                    <p style="font-size: 10pt;">Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">include_non_final_data</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Boolean</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Optional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;"> 	
+
+Indicates whether to include initial data in the response.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">
+                                                    <p style="font-size: 10pt;">National Airing Views</p>
+                                                    <p style="font-size: 10pt;">
+Local Airing Views
+
+
+</p>
+                                                    <p style="font-size: 10pt;">Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">page_size</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Integer</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;"> 	
+
+Optional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The number of records per page. The default is 10000.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">
+                                                    <p style="font-size: 10pt;">National Airing Views</p>
+                                                    <p style="font-size: 10pt;">Local Airing Views</p>
+                                                    <p style="font-size: 10pt;">
+Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">start_of_day</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Optional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Defines the start of the broadcast day. Supports any quarter hour from 12AM ("00:00" or "0:00") to 8AM ("08:00" or "8:00").
+
+The API defaults to a 6AM start-of-day for Eastern and Pacific timezones and a 5AM start-of-day for Central and Mountain timezones.
+
+Quarter hour ranges specified in the filters must not cross the&#160;start_of_day&#160;value.</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">
+                                                    <p style="font-size: 10pt;">
+Local Airing Views
+
+</p>
+                                                    <p style="font-size: 10pt;">Local Time Views</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h1>Response Object</h1>
+                                    <p>The JSON response object includes the following keys:</p>
+                                    <table style="width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 134px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 116px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 75px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Name</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">When</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;color: #000000;background-color: #dcdcdc;font-weight: bold;">Description</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">api_request_id</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Always</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">A unique request identifier.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">api_time</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Always</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Integer</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The elapsed time for the API request.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">disclosures</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Conditional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">A subscriber notification about events or changes that affected reporting for the selected date range, market, and/or network.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">final_date</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Always</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Date</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The date in the system that reporting is locked.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">message</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">On Failure</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">An error message. Additional keys may be included that are unique to the type of error and specific to each endpoint.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">result_columns</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">On&#160;Success</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Array</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The column names of the result dataset.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">result_rows</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">On&#160;Success</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Array</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The rows (each an array of values) of the result dataset that correspond to column names.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">status</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">Always</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;"> 	
+
+A machine readable code equal to "success" if the request succeeded or a specific error code identifying the type of error.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">warnings</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">Conditional</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">String</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">An error message generated when part of a request cannot be fulfilled.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h1>Status Codes</h1>
+                                    <p>The JSON response status codes are listed below:</p>
+                                    <table style="width: 950px;mc-table-style: url('../Resources/TableStyles/Simple.css');border-bottom-style: solid;border-bottom-width: 4px;border-bottom-color: #dcdcdc;margin-left: 0;margin-right: auto;" class="TableStyle-SimpleWithPadding" cellspacing="0">
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" style="width: 202px;" />
+                                        <col class="TableStyle-SimpleWithPadding-Column-Column1" />
+                                        <tbody>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;">Status Code</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #dcdcdc;color: #000000;font-weight: bold;"> 	
+
+Description</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">account_inactive</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The user account is not currently active.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">bad_request</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request failed basic validation (a required key is missing or is the wrong type).</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">canceled</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The request was canceled.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">invalid_field_type</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request includes an incorrect field type.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">invalid_field_value</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The request includes an incorrect value has been included within a field in the request.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">invalid_filter</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request contains the wrong number of arguments for a filter or a filter cannot be applied to the field.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">no_subscription</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The user account does not currently have access or does not have a subscription number set up.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">processing</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request is currently in progress.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">success</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The request process was successful.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">timeout</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request timed out and was not successful.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">too_many_requests</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The Comscore API is busy processing requests. Try again in a few minutes.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">too_many_requests_for_client
+	
+
+</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">The request queue is full. Wait until some of the submitted requests are finished before sending a new one.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyE-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">too_many_requests_for_host</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyD-Column1-Row1" style="font-size: 10pt;background-color: #ffffff;">The Comscore API is busy processing requests. Try again in a few minutes.</td>
+                                            </tr>
+                                            <tr class="TableStyle-SimpleWithPadding-Body-Row1">
+                                                <td class="TableStyle-SimpleWithPadding-BodyB-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">unexpected_error</td>
+                                                <td class="TableStyle-SimpleWithPadding-BodyA-Column1-Row1" style="font-size: 10pt;background-color: #f5f5f5;">An error occurred while processing the request.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><b>Note:</b> The JSON response object always contains a status code and sometimes additional keys depending on the error.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

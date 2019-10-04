@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/Fonts/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <div class="footer center">
+                <div class="HomeMasterPageFooter outer-row">
+                    <div>
+                        <p class="Copyright">Copyright 2019 © <a href="https://www.comscore.com" target="_blank">Comscore, Inc.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
